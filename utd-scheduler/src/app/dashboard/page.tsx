@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 import kamui from '@public/kamui.png'
 import SideMenu from "@components/SideMenu";
 import ClassCard from "@components/ClassCard";
+import ClassCalendar from "@components/ClassCalendar";
 
 export default function Dashboard() {
 
@@ -39,7 +40,7 @@ export default function Dashboard() {
 
 
     return (
-        <main className="flex flex-col w-screen h-screen">
+        <main className="flex flex-col w-screen">
             <div className='text-center font-bold text-6xl text-white w-[50%] self-center'>
                 Dashboard
             </div>
@@ -51,6 +52,8 @@ export default function Dashboard() {
                 <ClassCard classData={class3} />
                 <ClassCard classData={class3} />
             </div>
+
+            <ClassCalendar />
 
         </main>
     );
