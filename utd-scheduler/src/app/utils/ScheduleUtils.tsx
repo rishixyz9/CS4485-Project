@@ -26,7 +26,7 @@ export class Class {
         this.days = days
         this.professor = professor
         this.location = location
-        this.timeSlot = { times: extractTimesAsMinutes(this.time), days: extractDaysFromString(this.days) }
+        this.timeSlot = { times: extractTimesAsMinutes(this.time), days: extractDaysFromString(this.days), name: this.name }
     }
 }
 
@@ -49,7 +49,7 @@ export class Schedule {
         let slots = []
         for (let i = 0; i < this.slots.length; i++) {
             if (this.slots[i].days[day]) {
-                slots.push(this.slots[i].times)
+                slots.push([this.slots[i].times, this.slots[i].name])
             }
         }
         return slots

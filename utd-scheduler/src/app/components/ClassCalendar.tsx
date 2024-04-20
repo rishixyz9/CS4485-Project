@@ -28,6 +28,7 @@ export default function ClassCalendar() {
         let busy = Math.min(4, Math.max(0, (timeObj.endTime - hour) * 4))
         let free = Math.max(0, 4 - busy)
 
+
         return (
             <div className="col-span-1 grid grid-rows-4">
                 {enabled ? (<>
@@ -35,7 +36,7 @@ export default function ClassCalendar() {
                         <div key={i + 1} className="bg-white row-span-1"></div>
                     )}
                     {busy > 0 &&
-                        <Tooltip color="primary" content="CS 4349.001" className="capitalize">
+                        <Tooltip color="primary" content="CS 4349.001" className={`row-span-${busy} capitalize`}>
                             <div className={`row-span-${busy} bg-[#17c964]`}></div>
                         </Tooltip>}
                     {[...Array(free)].map((x, i) =>
