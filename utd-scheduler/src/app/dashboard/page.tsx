@@ -19,7 +19,6 @@ export default function Dashboard() {
         professor: 'James Wilson',
         location: 'ECSS 2.410',
     }
-
     let class2 = {
         name: 'Discrete Mathematics for Computing II',
         course: 'CS 3305.003',
@@ -28,7 +27,6 @@ export default function Dashboard() {
         professor: 'James Wilson',
         location: 'ECSS 2.412',
     }
-
     let class3 = {
         name: 'Digital Logic and Computer Design',
         course: 'CS 4341.002',
@@ -37,7 +35,6 @@ export default function Dashboard() {
         professor: 'Omar Hamdy',
         location: 'ECSW 3.212',
     }
-
 
     return (
         <main className="flex flex-col w-screen">

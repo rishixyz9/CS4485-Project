@@ -33,7 +33,6 @@ export default function ClassCard({ classData }: { classData: any }) {
                     <Tag tagName="Computer Science" />
                     <Tag tagName="Major Prep" />
                 </div>
-
             </CardHeader>
         </Card>
     );

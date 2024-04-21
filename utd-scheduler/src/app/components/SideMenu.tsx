@@ -8,7 +8,6 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 import kamui from '@public/kamui.png'
 
-
 export default function SideMenu() {
 
     const [open, setOpen] = useState(false);
