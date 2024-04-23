@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 interface Collaborator {
   email: string;
 }
-
+// form for collaboration
 const CollaboratorForm: React.FC = () => {
   const [collaborators, setCollaborators] = useState<Collaborator[]>([]);
   const [email, setEmail] = useState('');

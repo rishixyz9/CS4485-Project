@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 interface CourseFormProps {
   onAddCourse: (course: Course) => void;
 }
-
+// course form to add course during set time
 const CourseForm: React.FC<CourseFormProps> = ({ onAddCourse }) => {
   const [courseName, setCourseName] = useState('');
   const [days, setDays] = useState<string[]>([]);
