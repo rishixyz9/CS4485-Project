@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className + " bg-neutral-900"}>
         <NextUIProvider>
-          <main className="dark text-foreground bg-background">
+          <main className="dark text-foreground bg-background min-h-screen">
             <Navbar />
             {children}
           </main>

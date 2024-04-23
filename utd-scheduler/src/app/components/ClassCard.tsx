@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardFooter, Image, Button } from "@nextui-org/react";
+import { Card, CardHeader, CardFooter, Button } from "@nextui-org/react";
 import Tag from "@components/Tag";
 
 export default function ClassCard({ classData }: { classData: any }) {

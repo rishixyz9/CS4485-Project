@@ -26,7 +26,7 @@ export class Class {
         this.days = days
         this.professor = professor
         this.location = location
-        this.timeSlot = { times: extractTimesAsMinutes(this.time), days: extractDaysFromString(this.days), name: this.name }
+        this.timeSlot = { times: extractTimesAsMinutes(this.time), days: extractDaysFromString(this.days), name: `${this.name} ${this.course}` }
     }
 }
 
