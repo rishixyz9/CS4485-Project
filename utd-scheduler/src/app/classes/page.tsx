@@ -13,29 +13,21 @@ import { fetchClassData } from "@utils/FirebaseUtils";
 
 export default function Classes() {
 
-    const [cart, setCart] = useState([])
-
     const [currentPage, setCurrentPage] = React.useState(1);
     const [isInvalid, setIsInvalid] = useState<boolean>(false)
 
-    const [selectOptions, setSelectOptions] = useState<any>(null)
+    const [classData, setClassData] = useState<any>(null)
+
     const [days, setDays] = useState<string>("")
     const [selectedClass, setSelectedClass] = useState<string>("1000")
     const [professors, setProfessors] = useState<string[]>([])
 
     const [filteredClasses, setFilteredClasses] = useState<any[]>([])
-    const [sections, setSections] = useState<string[]>([])
-    const [selectedSection, setSelectedSection] = useState<string>("")
 
-    const [classData, setClassData] = useState<any>(null)
+    const [selectedSection, setSelectedSection] = useState<string>("")
 
     useEffect(() => {
         fetchClassData().then((data) => {
-            let set = new Set()
-            data?.map((classData) => {
-                set.add(`${classData.course.split('.')[0]} - ${classData.name}`)
-            })
-            setSelectOptions(set)
             setClassData(data)
         })
     }, [])
@@ -62,14 +54,25 @@ export default function Classes() {
     }
 
     const ClassSelect = () => {
-        return (classData ? (
+
+        const [options, setOptions] = useState<any>(null)
+
+        useEffect(() => {
+            let set = new Set()
+            classData?.map((e) => {
+                set.add(`${e.course.split('.')[0]} - ${e.name}`)
+            })
+            setOptions(set)
+        }, [classData])
+
+        return (options ? (
             <Select
                 label="Class selection"
                 placeholder="Select a class"
                 className="dark max-w-xs w-64"
                 onChange={(e) => setSelectedClass(e.target.value.split(' ')[0])}
             >
-                {[...selectOptions].map((item) => (
+                {[...options].map((item) => (
                     <SelectItem key={item} value={item}>
                         {item}
                     </SelectItem>
@@ -77,7 +80,6 @@ export default function Classes() {
             </Select>
         ) : <Spinner />)
     }
-
 
     const ProfessorSelect = () => {
 
@@ -133,7 +135,7 @@ export default function Classes() {
                 onChange={(e) => setSelectedSection(e.target.value)}
             >
                 {options.map((e: any) => (
-                    <SelectItem key={`${e.course} ${e.time}`} value={`${e.course} ${e.time}`} >
+                    <SelectItem key={e.course} value={e.course} >
                         {`${e.course} ${e.time}`}
                     </SelectItem>)
                 )}
