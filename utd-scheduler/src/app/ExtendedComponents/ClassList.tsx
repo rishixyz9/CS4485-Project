@@ -5,7 +5,7 @@ interface Class {
   instructor: string;
   schedule: string;
 }
-
+// form for adding, storing, and editing class list
 const ClassListForm: React.FC = () => {
   const [classList, setClassList] = useState<Class[]>([]);
   const [className, setClassName] = useState('');

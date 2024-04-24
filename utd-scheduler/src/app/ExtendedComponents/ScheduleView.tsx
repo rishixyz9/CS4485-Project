@@ -3,7 +3,7 @@ import React from 'react';
 interface ScheduleViewerProps {
   courses: Course[];
 }
-
+// view courses on schedule
 const ScheduleViewer: React.FC<ScheduleViewerProps> = ({ courses }) => {
   // Group courses by day
   const groupedCourses: { [day: string]: Course[] } = {};
