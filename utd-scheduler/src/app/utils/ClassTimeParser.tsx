@@ -45,3 +45,14 @@ export function extractDaysFromString(daysString: String) {
     }
     return res
 }
+
+export function compareTwoDaysFromString(s1: string, s2: string) {
+    const regex = /Th|[MTWFS]/g;
+    const s2days = s2.match(regex) || [];
+    for (let i = 0; i < s2days.length; i++) {
+        if (!s1.includes(s2days[i])) {
+            return false
+        }
+    }
+    return true
+}

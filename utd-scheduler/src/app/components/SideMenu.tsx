@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faBookOpen } from '@fortawesome/fontawesome-free-solid'
@@ -11,6 +12,8 @@ import kamui from '@public/kamui.png'
 export default function SideMenu() {
 
     const [open, setOpen] = useState(false);
+
+    const router = useRouter();
 
     const toggleMenu = () => {
         setOpen(!open);
@@ -37,19 +40,19 @@ export default function SideMenu() {
 
                 {/* dropdown items */}
                 <div className="flex flex-col font-medium gap-2">
-                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-cyan-600 hover:cursor-pointer flex-grow-0">
+                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-cyan-600 hover:cursor-pointer flex-grow-0" onClick={() => router.push('/classes')}>
                         <FontAwesomeIcon className="self-center w-4 h-4" icon={faBookOpen as IconProp} />
                         <div className='ml-6'>Classes</div>
                     </div>
-                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-cyan-600 hover:cursor-pointer flex-grow-0">
+                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-cyan-600 hover:cursor-pointer flex-grow-0" onClick={() => router.push('/dashboard')}>
                         <FontAwesomeIcon className="self-center w-4 h-4" icon={faCalendarDays} />
                         <div className='ml-6'>Schedule</div>
                     </div>
-                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-cyan-600 hover:cursor-pointer flex-grow-0">
+                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-cyan-600 hover:cursor-pointer flex-grow-0" onClick={() => router.push('/friends')}>
                         <FontAwesomeIcon className="self-center w-4 h-4" icon={faUserGroup} />
                         <div className='ml-6'>Friends</div>
                     </div>
-                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-cyan-600 hover:cursor-pointer flex-grow-0">
+                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-cyan-600 hover:cursor-pointer flex-grow-0" onClick={() => router.push('#')}>
                         <FontAwesomeIcon className="self-center w-4 h-4" icon={faGear} />
                         <div className='ml-6'>Settings</div>
                     </div>
@@ -57,11 +60,11 @@ export default function SideMenu() {
 
                 {/* footer items */}
                 <div className="flex flex-col font-medium mt-auto mb-8 gap-[0.25rem]">
-                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-violet-600 hover:cursor-pointer flex-grow-0">
+                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-violet-600 hover:cursor-pointer flex-grow-0" onClick={() => router.push('#')}>
                         <FontAwesomeIcon className="self-center" icon={faCircleUser} />
                         <div className='ml-4'>Profile</div>
                     </div>
-                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-red-500 hover:cursor-pointer flex-grow-0">
+                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-red-500 hover:cursor-pointer flex-grow-0" onClick={() => router.push('#')}>
                         <FontAwesomeIcon className="self-center" icon={faRightFromBracket} />
                         <div className='ml-4'>Logout</div>
                     </div>

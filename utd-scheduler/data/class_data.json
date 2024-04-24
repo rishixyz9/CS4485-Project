@@ -1,0 +1,1962 @@
+[
+    {
+        "name": "Computer Science Laboratory",
+        "course": "1134.101",
+        "time": "1:00 PM - 3:45 PM",
+        "days": "F",
+        "professor": "Shyam Karrah",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Computer Science Laboratory",
+        "course": "1134.102",
+        "time": "10:00 AM - 12:45 PM",
+        "days": "F",
+        "professor": "Jeyakesavan Veerasamy",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Introduction to Programming",
+        "course": "1325.001",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Nidhiben Solanki",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Introduction to Programming",
+        "course": "1325.002",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Nidhiben Solanki",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Programming Fundamentals for Non-Majors",
+        "course": "1334.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "TTh",
+        "professor": "Shyam Karrah",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Programming Fundamentals for Non-Majors",
+        "course": "1334.002",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Jeyakesavan Veerasamy",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Computer Science I for Non-majors",
+        "course": "1335.001",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Jeyakesavan Veerasamy",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Computer Science I for Non-majors",
+        "course": "1335.002",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Priya Narayanasami",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.002",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Priya Narayanasami",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.003",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Srimathi Srinivasan",
+        "location": "ECSW 1.365"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.004",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Neeraj Gupta",
+        "location": "JO 4.614"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.005",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Srimathi Srinivasan",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.006",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Srimathi Srinivasan",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.007",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Jason Smith",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.008",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Jason Smith",
+        "location": "HH 2.502"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.010",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Doug DeGroot",
+        "location": "ECSW 1.365"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.011",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Miguel Razo Razo",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.012",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Doug DeGroot",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.0w1",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Scott Dollinger",
+        "location": "ONLINE"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.0w9",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Scott Dollinger",
+        "location": "ONLINE"
+    },
+    {
+        "name": "Computer Science I",
+        "course": "1337.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Miguel Razo Razo",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Programming Fundamentals",
+        "course": "1436.002",
+        "time": "2:30 PM - 4:45 PM",
+        "days": "MW",
+        "professor": "Laurie Thompson",
+        "location": "ECSS 2.312"
+    },
+    {
+        "name": "Programming Fundamentals",
+        "course": "1436.003",
+        "time": "4:00 PM - 6:15 PM",
+        "days": "MW",
+        "professor": "Gordon Arnold",
+        "location": "GR 4.301"
+    },
+    {
+        "name": "Programming Fundamentals",
+        "course": "1436.004",
+        "time": "2:30 PM - 4:45 PM",
+        "days": "TTh",
+        "professor": "Shyam Karrah",
+        "location": "ECSS 2.312"
+    },
+    {
+        "name": "Discrete Mathematics for Computing I",
+        "course": "2305.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Simeon Ntafos",
+        "location": "FN 2.102"
+    },
+    {
+        "name": "Discrete Mathematics for Computing I",
+        "course": "2305.002",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Wei-Pang Chin",
+        "location": "FN 2.102"
+    },
+    {
+        "name": "Discrete Mathematics for Computing I",
+        "course": "2305.003",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Simeon Ntafos",
+        "location": "ECSW 1.315"
+    },
+    {
+        "name": "Discrete Mathematics for Computing I",
+        "course": "2305.004",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Wei-Pang Chin",
+        "location": "FN 2.102"
+    },
+    {
+        "name": "Discrete Mathematics for Computing I",
+        "course": "2305.501",
+        "time": "7:00 PM - 8:15 PM",
+        "days": "MW",
+        "professor": "James Willson",
+        "location": "FN 2.102"
+    },
+    {
+        "name": "Discrete Mathematics for Computing I",
+        "course": "2305.502",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "James Willson",
+        "location": "ECSW 1.315"
+    },
+    {
+        "name": "Computer Science II",
+        "course": "2336.001",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Jason Smith",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Computer Science II",
+        "course": "2336.002",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Brian Ricks",
+        "location": "JO 4.614"
+    },
+    {
+        "name": "Computer Science II",
+        "course": "2336.003",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Brian Ricks",
+        "location": "HH 2.402"
+    },
+    {
+        "name": "Computer Science II",
+        "course": "2336.004",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Neeraj Gupta",
+        "location": "CR 1.202"
+    },
+    {
+        "name": "Computer Science II",
+        "course": "2336.501",
+        "time": "7:00 PM - 8:15 PM",
+        "days": "MW",
+        "professor": "Barbara Maweu",
+        "location": "MC 2.410"
+    },
+    {
+        "name": "Computer Science II",
+        "course": "2337.001",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Gordon Arnold",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "2340.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Alice Wang",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "2340.002",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Yi Zhao",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "2340.003",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Gity Karami",
+        "location": "ECSW 1.365"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "2340.004",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "TTh",
+        "professor": "Alice Wang",
+        "location": "JO 3.601"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "2340.005",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "John Cole",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "2340.006",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Wafa Jaffal",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "2340.007",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Brian Ricks",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "2340.008",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "TTh",
+        "professor": "Tooraj Nikoubin",
+        "location": "FN 2.102"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "2340.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Alice Wang",
+        "location": "JO 4.614"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "2340.hn1",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Nhut Nguyen",
+        "location": "AD 3.216"
+    },
+    {
+        "name": "Professional Responsibility in Computer Science and Software Engineering",
+        "course": "3162.052",
+        "time": "8:00 AM - 8:50 AM",
+        "days": "TTh",
+        "professor": "Vidroha Debroy",
+        "location": "SCI 1.210"
+    },
+    {
+        "name": "Professional Responsibility in Computer Science and Software Engineering",
+        "course": "3162.053",
+        "time": "9:00 AM - 9:50 AM",
+        "days": "TTh",
+        "professor": "Vidroha Debroy",
+        "location": "SCI 1.210"
+    },
+    {
+        "name": "Professional Responsibility in Computer Science and Software Engineering",
+        "course": "3162.091",
+        "time": "9:00 AM - 9:50 AM",
+        "days": "TTh",
+        "professor": "Vidroha Debroy",
+        "location": "SCI 1.210"
+    },
+    {
+        "name": "Professional Responsibility in Computer Science and Software Engineering",
+        "course": "3162.092",
+        "time": "8:00 AM - 8:50 AM",
+        "days": "TTh",
+        "professor": "Vidroha Debroy",
+        "location": "SCI 1.210"
+    },
+    {
+        "name": "Discrete Mathematics for Computing II",
+        "course": "3305.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "TTh",
+        "professor": "Jason Jue",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Discrete Mathematics for Computing II",
+        "course": "3305.002",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Jessica Ouyang",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Discrete Mathematics for Computing II",
+        "course": "3305.003",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Meghana Satpute",
+        "location": "ECSW 1.315"
+    },
+    {
+        "name": "Discrete Mathematics for Computing II",
+        "course": "3305.004",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Meghana Satpute",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Discrete Mathematics for Computing II",
+        "course": "3305.005",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Balakrishnan Prabhakaran",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Discrete Mathematics for Computing II",
+        "course": "3305.006",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Yvo Desmedt",
+        "location": "SLC 2.303"
+    },
+    {
+        "name": "Discrete Mathematics for Computing II",
+        "course": "3305.hon",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Bhadrachalam Chitturi",
+        "location": "ECSN 2.120"
+    },
+    {
+        "name": "Probability and Statistics in Computer Science and Software Engineering",
+        "course": "3341.001",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Octavious Smiley",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Probability and Statistics in Computer Science and Software Engineering",
+        "course": "3341.002",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Shengjie Jiang",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Probability and Statistics in Computer Science and Software Engineering",
+        "course": "3341.003",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Octavious Smiley",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Probability and Statistics in Computer Science and Software Engineering",
+        "course": "3341.004",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Huizhen Guo",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Probability and Statistics in Computer Science and Software Engineering",
+        "course": "3341.005",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Shengjie Jiang",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Probability and Statistics in Computer Science and Software Engineering",
+        "course": "3341.006",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Octavious Smiley",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Probability and Statistics in Computer Science and Software Engineering",
+        "course": "3341.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Huizhen Guo",
+        "location": "GR 4.428"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Greg Ozbirn",
+        "location": "ECSW 1.365"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.002",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Yi Zhao",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.003",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Meghana Satpute",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.004",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Sergey Bereg",
+        "location": "ECSS 2.203"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.005",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Ranran Feng",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.006",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Ranran Feng",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.007",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Bhadrachalam Chitturi",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.008",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Serdar Erbatur",
+        "location": "JO 3.601"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Ziaullah Khan",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.502",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Ziaullah Khan",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Data Structures and Introduction to Algorithmic Analysis",
+        "course": "3345.503",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Omar Hamdy",
+        "location": "GR 2.302"
+    },
+    {
+        "name": "Software Engineering",
+        "course": "3354.001",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Mark Paulk",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Software Engineering",
+        "course": "3354.002",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Priya Narayanasami",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Software Engineering",
+        "course": "3354.003",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Ebru Cankaya",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Software Engineering",
+        "course": "3354.004",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Mehra Nouroz Borazjany",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Software Engineering",
+        "course": "3354.005",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Erik Peterson",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Software Engineering",
+        "course": "3354.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Michael Christiansen",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Software Engineering",
+        "course": "3354.502",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Michael Christiansen",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Software Engineering",
+        "course": "3354.503",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Srimathi Srinivasan",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Software Engineering",
+        "course": "3354.hon",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Rym Zalila-Wenkstern",
+        "location": "AD 2.216"
+    },
+    {
+        "name": "Systems Programming in UNIX and Other Environments",
+        "course": "3377.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Scott Dollinger",
+        "location": "JO 3.516"
+    },
+    {
+        "name": "Systems Programming in UNIX and Other Environments",
+        "course": "3377.002",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Jeyakesavan Veerasamy",
+        "location": "JO 4.614"
+    },
+    {
+        "name": "Systems Programming in UNIX and Other Environments",
+        "course": "3377.003",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Richard Min",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Systems Programming in UNIX and Other Environments",
+        "course": "3377.004",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Ranran Feng",
+        "location": "GR 3.420"
+    },
+    {
+        "name": "Systems Programming in UNIX and Other Environments",
+        "course": "3377.005",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Sridhar Alagar",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Systems Programming in UNIX and Other Environments",
+        "course": "3377.006",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Gity Karami",
+        "location": "JO 4.614"
+    },
+    {
+        "name": "Systems Programming in UNIX and Other Environments",
+        "course": "3377.007",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Mohamed Amine Belkoura",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Systems Programming in UNIX and Other Environments",
+        "course": "3377.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Mohamed Amine Belkoura",
+        "location": "FN 2.102"
+    },
+    {
+        "name": "Systems Programming in UNIX and Other Environments",
+        "course": "3377.503",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Sridhar Alagar",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.101",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "T",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.102",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "W",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.103",
+        "time": "1:00 PM - 3:45 PM",
+        "days": "Th",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.104",
+        "time": "1:00 PM - 3:45 PM",
+        "days": "F",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.105",
+        "time": "1:00 PM - 3:45 PM",
+        "days": "M",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.114"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.106",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "T",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.107",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "W",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.108",
+        "time": "1:00 PM - 3:45 PM",
+        "days": "Th",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.109",
+        "time": "1:00 PM - 3:45 PM",
+        "days": "F",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.110",
+        "time": "1:00 PM - 3:45 PM",
+        "days": "M",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.111",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "Th",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.112",
+        "time": "7:00 PM - 9:45 PM",
+        "days": "T",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.113",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "Th",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.114",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "F",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.115",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "M",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.116",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "F",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.117",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "M",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.118",
+        "time": "1:00 PM - 3:45 PM",
+        "days": "M",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.114"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.119",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "M",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.114"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.601",
+        "time": "7:00 PM - 9:45 PM",
+        "days": "W",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.602",
+        "time": "7:00 PM - 9:45 PM",
+        "days": "F",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.603",
+        "time": "7:00 PM - 9:45 PM",
+        "days": "T",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.604",
+        "time": "7:00 PM - 9:45 PM",
+        "days": "M",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.605",
+        "time": "7:00 PM - 9:45 PM",
+        "days": "F",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.607",
+        "time": "7:00 PM - 9:45 PM",
+        "days": "Th",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.ho1",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "T",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.114"
+    },
+    {
+        "name": "Digital Systems Laboratory",
+        "course": "4141.hon",
+        "time": "7:00 PM - 9:45 PM",
+        "days": "Th",
+        "professor": "Eric Becker",
+        "location": "ECSN 3.112"
+    },
+    {
+        "name": "Special Topics in Computer Science",
+        "course": "4301.001",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Kevin Hamlen",
+        "location": "AD 2.216"
+    },
+    {
+        "name": "Special Topics in Computer Science",
+        "course": "4301.002",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Bhavani Thuraisingham",
+        "location": "ECSW 1.365"
+    },
+    {
+        "name": "Special Topics in Computer Science",
+        "course": "4301.003",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Yvo Desmedt",
+        "location": "ECSS 2.312"
+    },
+    {
+        "name": "Special Topics in Computer Science",
+        "course": "4301.004",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Rawan Alghofaili",
+        "location": "PHY 1.202"
+    },
+    {
+        "name": "Intelligent Systems Design",
+        "course": "4315.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Richard Golden",
+        "location": "CR 1.212"
+    },
+    {
+        "name": "Introduction to Programming Video Games",
+        "course": "4332.001",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Ranran Feng",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Numerical Analysis",
+        "course": "4334.001",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Saikat Biswas",
+        "location": "AD 3.216"
+    },
+    {
+        "name": "Programming Language Paradigms",
+        "course": "4337.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "TTh",
+        "professor": "Gity Karami",
+        "location": "ECSW 1.315"
+    },
+    {
+        "name": "Programming Language Paradigms",
+        "course": "4337.002",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Chris Davis",
+        "location": "SLC 2.303"
+    },
+    {
+        "name": "Programming Language Paradigms",
+        "course": "4337.003",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Yi Zhao",
+        "location": "JO 4.614"
+    },
+    {
+        "name": "Programming Language Paradigms",
+        "course": "4337.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Elmer Salazar",
+        "location": "ECSW 1.315"
+    },
+    {
+        "name": "Programming Language Paradigms",
+        "course": "4337.502",
+        "time": "7:00 PM - 8:15 PM",
+        "days": "TTh",
+        "professor": "Elmer Salazar",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Programming Language Paradigms",
+        "course": "4337.503",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Richard Min",
+        "location": "SLC 2.303"
+    },
+    {
+        "name": "Programming Language Paradigms",
+        "course": "4337.504",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Chris Davis",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Programming Language Paradigms",
+        "course": "4337.hon",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Chris Davis",
+        "location": "ECSN 2.126"
+    },
+    {
+        "name": "Digital Logic and Computer Design",
+        "course": "4341.001",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Bingzhe Li",
+        "location": "FN 2.102"
+    },
+    {
+        "name": "Digital Logic and Computer Design",
+        "course": "4341.002",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Omar Hamdy",
+        "location": "GR 4.428"
+    },
+    {
+        "name": "Digital Logic and Computer Design",
+        "course": "4341.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Omar Hamdy",
+        "location": "GR 3.420"
+    },
+    {
+        "name": "Digital Logic and Computer Design",
+        "course": "4341.502",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Eric Becker",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Digital Logic and Computer Design",
+        "course": "4341.503",
+        "time": "7:00 PM - 8:15 PM",
+        "days": "MW",
+        "professor": "Omar Hamdy",
+        "location": "SLC 2.303"
+    },
+    {
+        "name": "Digital Logic and Computer Design",
+        "course": "4341.504",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Gity Karami",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Digital Logic and Computer Design",
+        "course": "4341.hon",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Ebru Cankaya",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Database Systems",
+        "course": "4347.001",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Xinda Wang",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Database Systems",
+        "course": "4347.002",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Jalal Omer",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Database Systems",
+        "course": "4347.003",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Eric Becker",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Database Systems",
+        "course": "4347.004",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Pushpa Kumar",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Database Systems",
+        "course": "4347.005",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Pushpa Kumar",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Database Systems",
+        "course": "4347.006",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Wei Wu",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Database Systems",
+        "course": "4347.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Murat Kantarcioglu",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Database Systems",
+        "course": "4347.502",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Jalal Omer",
+        "location": "ECSW 1.365"
+    },
+    {
+        "name": "Operating Systems Concepts",
+        "course": "4348.001",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Greg Ozbirn",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Operating Systems Concepts",
+        "course": "4348.002",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Erik Peterson",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Operating Systems Concepts",
+        "course": "4348.003",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Elmer Salazar",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Operating Systems Concepts",
+        "course": "4348.004",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Greg Ozbirn",
+        "location": "JO 4.614"
+    },
+    {
+        "name": "Operating Systems Concepts",
+        "course": "4348.005",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Doug DeGroot",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Operating Systems Concepts",
+        "course": "4348.006",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Neeraj Mittal",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Operating Systems Concepts",
+        "course": "4348.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Greg Ozbirn",
+        "location": "ECSW 1.365"
+    },
+    {
+        "name": "Operating Systems Concepts",
+        "course": "4348.502",
+        "time": "7:00 PM - 8:15 PM",
+        "days": "TTh",
+        "professor": "Partha De, Ravi Prakash, Greg Ozbirn",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Advanced Algorithm Design and Analysis",
+        "course": "4349.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "TTh",
+        "professor": "Anjum Chida",
+        "location": "GR 2.302"
+    },
+    {
+        "name": "Advanced Algorithm Design and Analysis",
+        "course": "4349.002",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Anjum Chida",
+        "location": "SOM 1.212"
+    },
+    {
+        "name": "Advanced Algorithm Design and Analysis",
+        "course": "4349.003",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Benjamin Raichel",
+        "location": "MC 2.410"
+    },
+    {
+        "name": "Advanced Algorithm Design and Analysis",
+        "course": "4349.004",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Ding Du",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Advanced Algorithm Design and Analysis",
+        "course": "4349.005",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Serdar Erbatur",
+        "location": "JO 3.516"
+    },
+    {
+        "name": "Advanced Algorithm Design and Analysis",
+        "course": "4349.006",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "TTh",
+        "professor": "Partha De, Ovidiu Daescu",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Computer Graphics",
+        "course": "4361.001",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Pushpa Kumar",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Artificial Intelligence",
+        "course": "4365.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Sriraam Natarajan",
+        "location": "FN 2.102"
+    },
+    {
+        "name": "Artificial Intelligence",
+        "course": "4365.002",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Anjum Chida",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Artificial Intelligence",
+        "course": "4365.003",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Vibhav Gogate",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Artificial Intelligence",
+        "course": "4365.004",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Yunhui Guo",
+        "location": "GR 3.420"
+    },
+    {
+        "name": "Artificial Intelligence",
+        "course": "4365.501",
+        "time": "7:00 PM - 8:15 PM",
+        "days": "MW",
+        "professor": "Yu Chung Ng",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Artificial Intelligence",
+        "course": "4365.hon",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Yu Chung Ng",
+        "location": "ECSN 2.120"
+    },
+    {
+        "name": "Introduction to Machine Learning",
+        "course": "4375.001",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Xinya Du",
+        "location": "FN 2.102"
+    },
+    {
+        "name": "Introduction to Machine Learning",
+        "course": "4375.002",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Feng Chen",
+        "location": "ECSW 1.315"
+    },
+    {
+        "name": "Introduction to Machine Learning",
+        "course": "4375.003",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Rishabh Iyer",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Introduction to Machine Learning",
+        "course": "4375.501",
+        "time": "7:00 PM - 8:15 PM",
+        "days": "TTh",
+        "professor": "Ziaullah Khan",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Introduction to Machine Learning",
+        "course": "4375.502",
+        "time": "7:00 PM - 8:15 PM",
+        "days": "MW",
+        "professor": "Ziaullah Khan",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Object-Oriented Design",
+        "course": "4376.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "TTh",
+        "professor": "Mark Paulk",
+        "location": "MC 2.410"
+    },
+    {
+        "name": "Object-Oriented Design",
+        "course": "4376.002",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Mark Paulk",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Automata Theory",
+        "course": "4384.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "TTh",
+        "professor": "Bhadrachalam Chitturi",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Automata Theory",
+        "course": "4384.002",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "James Willson",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Automata Theory",
+        "course": "4384.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Chris Davis",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Automata Theory",
+        "course": "4384.502",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Serdar Erbatur",
+        "location": "MC 2.410"
+    },
+    {
+        "name": "Automata Theory",
+        "course": "4384.503",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Serdar Erbatur",
+        "location": "JO 3.516"
+    },
+    {
+        "name": "Automata Theory",
+        "course": "4384.hon",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Dung Huynh",
+        "location": "AD 3.216"
+    },
+    {
+        "name": "Compiler Design",
+        "course": "4386.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Neeraj Gupta",
+        "location": "ECSS 2.201"
+    },
+    {
+        "name": "Computer Networks",
+        "course": "4390.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Nhut Nguyen",
+        "location": "JO 3.516"
+    },
+    {
+        "name": "Computer Networks",
+        "course": "4390.002",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Zygmunt Haas",
+        "location": "HH 2.502"
+    },
+    {
+        "name": "Computer Networks",
+        "course": "4390.003",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Nidhiben Solanki",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Computer Networks",
+        "course": "4390.004",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Yi Ding",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Computer Networks",
+        "course": "4390.005",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Zygmunt Haas",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Computer Networks",
+        "course": "4390.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Jorge Cobb",
+        "location": "JO 4.614"
+    },
+    {
+        "name": "Introduction to Computer Vision",
+        "course": "4391.001",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Yu Xiang",
+        "location": "JO 4.102"
+    },
+    {
+        "name": "Computer and Network Security",
+        "course": "4393.001",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Nhut Nguyen",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Human Language Technologies",
+        "course": "4395.001",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Sanda Harabagiu",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Networking Laboratory",
+        "course": "4396.001",
+        "time": "10:00 AM - 12:45 PM",
+        "days": "F",
+        "professor": "Kamil Sarac",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Digital Forensics",
+        "course": "4398.001",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Neeraj Gupta",
+        "location": "ECSS 2.203"
+    },
+    {
+        "name": "Cyber Attack and Defense Laboratory",
+        "course": "4459.001",
+        "time": "4:00 PM - 6:15 PM",
+        "days": "TTh",
+        "professor": "Kangkook Jee",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Capstone Project",
+        "course": "4475.001",
+        "time": "8:30 AM - 11:15 AM",
+        "days": "F",
+        "professor": "Kemelli Estacio-Hiroms",
+        "location": "FO 3.616"
+    },
+    {
+        "name": "Computer Science Project",
+        "course": "4485.0w1",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "T",
+        "professor": "Miguel Razo Razo, John Cole, Pushpa Kumar, Sridhar Alagar, Ebru Cankaya, Eric Becker, Nhut Nguyen, Laurie Thompson",
+        "location": "ONLINE"
+    },
+    {
+        "name": "Undergraduate Research in Computer Science",
+        "course": "4v98.001",
+        "time": "4:00 PM - 6:45 PM",
+        "days": "F",
+        "professor": "Ovidiu Daescu",
+        "location": "ECSW 4.325"
+    },
+    {
+        "name": "Discrete Structures",
+        "course": "5333.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Wei-Pang Chin",
+        "location": "ECSW 4.325"
+    },
+    {
+        "name": "Algorithm Analysis and Data Structures",
+        "course": "5343.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Sridhar Alagar",
+        "location": "ECSS 2.305"
+    },
+    {
+        "name": "Operating Systems Concepts",
+        "course": "5348.502",
+        "time": "7:00 PM - 8:15 PM",
+        "days": "TTh",
+        "professor": "Partha De, Ravi Prakash, Greg Ozbirn",
+        "location": "ECSS 2.410"
+    },
+    {
+        "name": "Automata Theory",
+        "course": "5349.503",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Serdar Erbatur",
+        "location": "JO 3.516"
+    },
+    {
+        "name": "Special Topics in Computer Science",
+        "course": "6301.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Daniel Gibney",
+        "location": "ECSW 3.210"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "6304.001",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Hossein Pedram",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Computer Architecture",
+        "course": "6304.002",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Hossein Pedram",
+        "location": "JO 4.102"
+    },
+    {
+        "name": "Data Security and Privacy for Practitioners",
+        "course": "6305.501",
+        "time": "5:30 PM - 8:15 PM",
+        "days": "M",
+        "professor": "Ebru Cankaya",
+        "location": "JO 3.601"
+    },
+    {
+        "name": "Introduction to Big Data Management and Analytics for non CS-Majors",
+        "course": "6307.001",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Anurag Nagar",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Cyber Physical Systems and Critical Infrastructure Security for Practitioners",
+        "course": "6308.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Brian Ricks",
+        "location": "ECSW 3.210"
+    },
+    {
+        "name": "Statistical Methods for Data Science",
+        "course": "6313.001",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Min Chen",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Statistical Methods for Data Science",
+        "course": "6313.002",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Min Chen",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Web Programming Languages",
+        "course": "6314.501",
+        "time": "7:00 PM - 8:15 PM",
+        "days": "MW",
+        "professor": "Richard Min",
+        "location": "ECSS 2.412"
+    },
+    {
+        "name": "Computational Geometry",
+        "course": "6319.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Emily Fox",
+        "location": "ECSW 4.325"
+    },
+    {
+        "name": "Natural Language Processing",
+        "course": "6320.001",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Karen Mazidi",
+        "location": "HH 2.402"
+    },
+    {
+        "name": "Natural Language Processing",
+        "course": "6320.002",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Tatiana Erekhinskaya",
+        "location": "JO 3.516"
+    },
+    {
+        "name": "Information Retrieval",
+        "course": "6322.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Sanda Harabagiu",
+        "location": "SLC 1.102"
+    },
+    {
+        "name": "Information Security",
+        "course": "6324.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Chung Hwan Kim",
+        "location": "ECSS 2.306"
+    },
+    {
+        "name": "Virtual Reality",
+        "course": "6334.001",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Jin Ryong Kim",
+        "location": "SLC 2.303"
+    },
+    {
+        "name": "Wireless Networks",
+        "course": "6340.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Zygmunt Haas",
+        "location": "ECSS 2.203"
+    },
+    {
+        "name": "Introduction to Multicore Programming",
+        "course": "6346.001",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Neeraj Mittal",
+        "location": "AD 3.214"
+    },
+    {
+        "name": "Statistical Methods in AI and Machine Learning",
+        "course": "6347.001",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Nicholas Ruozzi",
+        "location": "ECSW 3.250"
+    },
+    {
+        "name": "Data and Applications Security",
+        "course": "6348.001",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Bhavani Thuraisingham",
+        "location": "ECSW 1.365"
+    },
+    {
+        "name": "Network Security",
+        "course": "6349.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MF",
+        "professor": "Shuang Hao",
+        "location": "SLC 1.102"
+    },
+    {
+        "name": "Big Data Management and Analytics",
+        "course": "6350.001",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "MW",
+        "professor": "Anurag Nagar",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Big Data Management and Analytics",
+        "course": "6350.002",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Anurag Nagar",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Compiler Construction",
+        "course": "6353.001",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Shiyi Wei",
+        "location": "ECSS 2.203"
+    },
+    {
+        "name": "Software Maintenance  Evolution  and Re-Engineering",
+        "course": "6356.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "MW",
+        "professor": "Shiyi Wei",
+        "location": "ECSS 2.203"
+    },
+    {
+        "name": "Object-Oriented Analysis and Design",
+        "course": "6359.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "TTh",
+        "professor": "Mehra Nouroz Borazjany",
+        "location": "ECSS 2.201"
+    },
+    {
+        "name": "Database Design",
+        "course": "6360.001",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Jalal Omer",
+        "location": "ECSW 1.355"
+    },
+    {
+        "name": "Database Design",
+        "course": "6360.002",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "MW",
+        "professor": "Wei Wu",
+        "location": "FN 2.102"
+    },
+    {
+        "name": "Database Design",
+        "course": "6360.003",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "TTh",
+        "professor": "Jalal Omer",
+        "location": "ECSS 2.415"
+    },
+    {
+        "name": "Advanced Requirements Engineering",
+        "course": "6361.001",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Lawrence Chung",
+        "location": "ECSW 3.250"
+    },
+    {
+        "name": "Design and Analysis of Computer Algorithms",
+        "course": "6363.001",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "TTh",
+        "professor": "Dung Huynh",
+        "location": "ECSS 2.311"
+    },
+    {
+        "name": "Design and Analysis of Computer Algorithms",
+        "course": "6363.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "MW",
+        "professor": "Sergey Bereg",
+        "location": "ECSS 2.203"
+    },
+    {
+        "name": "Design and Analysis of Computer Algorithms",
+        "course": "6363.502",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Ding Du",
+        "location": "ECSS 2.203"
+    },
+    {
+        "name": "Artificial Intelligence",
+        "course": "6364.001",
+        "time": "4:00 PM - 5:15 PM",
+        "days": "MW",
+        "professor": "Yu Chung Ng",
+        "location": "SLC 2.303"
+    },
+    {
+        "name": "Computer Graphics",
+        "course": "6366.001",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Xiaohu Guo",
+        "location": "ECSS 2.201"
+    },
+    {
+        "name": "Advanced Programming Languages",
+        "course": "6371.001",
+        "time": "1:00 PM - 2:15 PM",
+        "days": "TTh",
+        "professor": "Kevin Hamlen",
+        "location": "AD 2.216"
+    },
+    {
+        "name": "Computational Logic",
+        "course": "6374.001",
+        "time": "10:00 AM - 11:15 AM",
+        "days": "MW",
+        "professor": "Gopal Gupta",
+        "location": "SCI 2.225"
+    },
+    {
+        "name": "Machine Learning",
+        "course": "6375.001",
+        "time": "2:30 PM - 3:45 PM",
+        "days": "MW",
+        "professor": "Partha De, Anurag Nagar",
+        "location": "SCI 1.220"
+    },
+    {
+        "name": "Advanced Operating Systems",
+        "course": "6378.001",
+        "time": "8:30 AM - 9:45 AM",
+        "days": "TTh",
+        "professor": "Ravi Prakash",
+        "location": "GR 2.530"
+    },
+    {
+        "name": "Computer Vision",
+        "course": "6384.001",
+        "time": "11:30 AM - 12:45 PM",
+        "days": "TTh",
+        "professor": "Yapeng Tian",
+        "location": "ECSW 1.365"
+    },
+    {
+        "name": "Recent Advances in Computing",
+        "course": "7301.001",
+        "time": "10:00 AM - 12:45 PM",
+        "days": "F",
+        "professor": "Wei Yang",
+        "location": "ECSW 3.250"
+    },
+    {
+        "name": "Recent Advances in Computing",
+        "course": "7301.501",
+        "time": "5:30 PM - 6:45 PM",
+        "days": "TTh",
+        "professor": "Latifur Khan",
+        "location": "JO 4.102"
+    }
+]

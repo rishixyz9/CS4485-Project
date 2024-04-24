@@ -22,7 +22,6 @@ export default function Dashboard() {
             <div className='text-center font-bold text-6xl text-white w-[50%] self-center'>
                 Dashboard
             </div>
-            <SideMenu />
             <div className="flex flex-wrap ml-4 mr-4 gap-8">
                 <ClassCard classData={class1} />
                 <ClassCard classData={class2} />

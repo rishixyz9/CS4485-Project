@@ -24,7 +24,7 @@ export default function LoginModal({ setUser, setPass }: { setUser: Function, se
       <Button className="w-48 bg-gradient-to-r from-aqua to-h-purple text-md font-medium shadow-lg" onPress={onOpen} >Get Started!</Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} className=" text-white ">
         <ModalContent >
-          {(onClose: Event) => (
+          {(onClose: () => void) => (
             <>
               <ModalHeader className="flex flex-col gap-1">Login to continue</ModalHeader>
               <ModalBody>
