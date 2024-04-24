@@ -1,8 +1,27 @@
 import React from "react";
-import { Card, CardHeader, CardFooter, Button } from "@nextui-org/react";
+import { Card, CardHeader } from "@nextui-org/react";
+import { extractTimesAsMinutes } from "@utils/ClassTimeParser";
+import { classifyCourse } from "@utils/ScheduleUtils";
 import Tag from "@components/Tag";
 
 export default function ClassCard({ classData }: { classData: any }) {
+
+    const generateTags = (classData: any) => {
+        let building = classData.location.split(" ")[0];
+        let time = extractTimesAsMinutes(classData.time)?.startTime ?? 0 >= 12 ? "Afternoon" : "Morning";
+        let department = "Computer Science"
+        let classification = classifyCourse("4349")
+
+        return (
+            <div className="flex flex-wrap gap-2">
+                <Tag tagName={building} />
+                <Tag tagName={time} />
+                <Tag tagName={department} />
+                <Tag tagName={classification} />
+            </div>
+        )
+    }
+
     return (
         <Card isFooterBlurred radius="lg" className="border-none">
             <CardHeader className="flex flex-col gap-3">
@@ -27,12 +46,8 @@ export default function ClassCard({ classData }: { classData: any }) {
 
 
                 {/* Tags, kind of like on github */}
-                <div className="flex flex-wrap gap-2">
-                    <Tag tagName="ECSS" />
-                    <Tag tagName="Afternoon" />
-                    <Tag tagName="Computer Science" />
-                    <Tag tagName="Major Prep" />
-                </div>
+                {generateTags(classData)}
+
             </CardHeader>
         </Card>
     );

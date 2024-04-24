@@ -1,15 +1,29 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { use, useEffect, useRef, useState } from "react";
+import { Spinner } from "@nextui-org/react";
 
-import SideMenu from "@components/SideMenu";
 import ClassCard from "@components/ClassCard";
 import ClassCalendar from "@components/ClassCalendar";
+
 import { Class, Schedule } from "@utils/ScheduleUtils";
+import { User } from "@utils/UserUtils";
+import { getUser, fetchDataForCourse } from "@utils/FirebaseUtils";
 
 export default function Dashboard() {
 
-    const [cart, setCart] = useState([])
+    const [user, setUser] = useState<User | null>(null)
+    const [classes, setClasses] = useState<Class[]>([])
+
+    useEffect(() => {
+        getUser("jxd200022").then((data) => {
+            setUser(new User(data?.firstname, data?.lastname, data?.netId, data?.classes, data?.major, data?.year));
+            data?.classes.forEach(async (course: any) => {
+                const classData = await fetchDataForCourse(course)
+                setClasses([...classes, classData as Class])
+            })
+        })
+    }, [])
 
     const class1 = new Class('Advanced Data Structures and Algorithms', 'CS 4349.001', '12:00 PM - 1:15 PM', 'MW', 'James Wilson', 'ECSS 2.410')
     const class2 = new Class('Discrete Mathematics for Computing II', 'CS 3305.003', '1:30 PM - 2:45 PM', 'TTh', 'James Wilson', 'ECSS 2.412')
@@ -22,13 +36,12 @@ export default function Dashboard() {
             <div className='text-center font-bold text-6xl text-white w-[50%] self-center'>
                 Dashboard
             </div>
+            {user && classes ? (
             <div className="flex flex-wrap ml-4 mr-4 gap-8">
-                <ClassCard classData={class1} />
-                <ClassCard classData={class2} />
-                <ClassCard classData={class3} />
-                <ClassCard classData={class4} />
-                <ClassCard classData={class5} />
-            </div>
+                {classes.map((classData) => {
+                    return <ClassCard key={classData.course} classData={classData} />
+                })}
+            </div>): <Spinner />}
 
             <ClassCalendar />
 

@@ -3,7 +3,7 @@ import { extractDaysFromString, extractTimesAsMinutes } from "./ClassTimeParser"
 // example of inputs
 // let class1 = {
 //     name: 'Advanced Data Structures and Algorithms',
-//     course: 'CS 4349.001',
+//     course: '4349.001',
 //     time: '12:00 PM - 1:15 PM',
 //     days: 'MW',
 //     professor: 'James Wilson',
@@ -21,7 +21,7 @@ export class Class {
     duration: any
     constructor(name: string, course: string, time: string, days: string, professor: string, location: string) {
         this.name = name
-        this.course = course
+        this.course= course
         this.time = time
         this.days = days
         this.professor = professor
@@ -54,4 +54,22 @@ export class Schedule {
         }
         return slots
     }
+}
+
+export function classifyCourse(course: string) {
+    let courseCode = course.split(".")
+
+    let classifications = {
+        "Major Prep": ["1100", "1200", "1136", "1336", "1337", "2305", "2336", "2340"],
+        "Major Core": ["3162", "3305", "3341", "3345", "3354", "3377", "3390", "4141", "4337", "4341", "4347", "4348", "4349", "4384", "4485"],
+        "Guided Elective": ["4314", "4315", "4334", "4336", "4352", "4353", "4361", "4365", "4375", "4376", "4386", "4389", "4390", "4391", "4392", "4393", "4394", "4395", "4396", "4397", "4398", "4399", "EE 4325", "4351", "4352", "4367", "4381"]
+    }
+
+    for (let key in classifications) {
+        if (classifications[key as keyof typeof classifications].includes(courseCode[0])) {
+            return key
+        }
+    }
+
+    return "Elective"
 }

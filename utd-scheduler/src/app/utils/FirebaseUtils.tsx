@@ -27,23 +27,14 @@ export async function getUser(netId: string) {
     }
 }
 
-export async function createUser(firstname: string, lastname: string, netId: string, classes: Class[], schedule: Schedule, major: string, year: string) {
+export async function createUser(firstname: string, lastname: string, netId: string, classes: string[], major: string, year: string) {
     try {
         if (!await getUser(netId)) {
             const docRef = await setDoc(doc(db, "users", netId), {
                 firstname,
                 lastname,
                 netId,
-                classes: classes.map((classData) => {
-                    return {
-                        name: classData.name,
-                        course: classData.course,
-                        time: classData.time,
-                        days: classData.days,
-                        professor: classData.professor,
-                        location: classData.location
-                    }
-                }),
+                classes: classes,
                 major,
                 year,
             });
@@ -83,11 +74,11 @@ export async function removeFriendsFromUser(netId: string, friendId: any) {
     }
 }
 
-export async function addClassToUser(netId: string, classId: any) {
+export async function addClassToUser(netId: string, courseId: any) {
     try {
         if (await getUser(netId)) {
             const docRef = await updateDoc(doc(db, "users", netId), {
-                classes: arrayUnion(classId)
+                classes: arrayUnion(courseId)
             });
         }
         console.log("Document updated with ID: ", netId);
@@ -110,6 +101,7 @@ export async function fetchClassData() {
 }
 
 export async function fetchDataForCourse(course: string) {
+    console.log(course);
     try {
         const docRef = await getDoc(doc(db, "classes", course));
         if (docRef.exists()) {

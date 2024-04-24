@@ -1,15 +1,15 @@
 "use client"
 
 import React, { useEffect, useState } from "react";
-import { CheckboxGroup, Checkbox, Spinner, Select, SelectItem } from "@nextui-org/react";
+import { Button, CheckboxGroup, Checkbox, Spinner, Select, SelectItem } from "@nextui-org/react";
 
 import PaginatedForm from "@components/PaginatedForm";
+import ClassCard from "@components/ClassCard";
 
 import { Class, Schedule } from "@utils/ScheduleUtils";
 import { User } from "@utils/UserUtils";
 import { compareTwoDaysFromString } from "@utils/ClassTimeParser";
-import { fetchClassData } from "@utils/FirebaseUtils";
-
+import { getUser, fetchClassData, fetchDataForCourse } from "@utils/FirebaseUtils";
 
 export default function Classes() {
 
@@ -26,7 +26,12 @@ export default function Classes() {
 
     const [selectedSection, setSelectedSection] = useState<string>("")
 
+    const [user, setUser] = useState<User | null>(null)
+
     useEffect(() => {
+        getUser("jxd200022").then((data) => {
+            setUser(new User(data?.firstname, data?.lastname, data?.netId, data?.classes, data?.major, data?.year))
+        })
         fetchClassData().then((data) => {
             setClassData(data)
         })
@@ -59,7 +64,7 @@ export default function Classes() {
 
         useEffect(() => {
             let set = new Set()
-            classData?.map((e) => {
+            classData?.map((e: any) => {
                 set.add(`${e.course.split('.')[0]} - ${e.name}`)
             })
             setOptions(set)
@@ -123,7 +128,6 @@ export default function Classes() {
 
         useEffect(() => {
             let copy = [...filteredClasses]
-            console.log(copy?.filter((item: any) => (professors.join("").includes(item.professor))))
             setOptions(copy?.filter((item: any) => (professors.join("").includes(item.professor))));
         }, [professors])
 
@@ -148,6 +152,36 @@ export default function Classes() {
 
     }
 
+    const CheckoutBox = () => {
+        const [checkout, setCheckout] = useState<any>(null)
+        const [submited, setSubmited] = useState<boolean>(false)
+
+        useEffect(() => {
+            if (!selectedSection) { return }
+            fetchDataForCourse(selectedSection).then((data) => {
+                setCheckout(new Class(data?.name, data?.course, data?.time, data?.days, data?.professor, data?.location))
+            })
+        }, [selectedSection])
+
+        const handleClick = () => {
+            setSubmited(true)
+            user?.addClass(selectedSection)
+        }
+
+        return (checkout ? (
+            <>
+                <ClassCard classData={checkout} />
+                <Button variant="flat" color="secondary" isDisabled={submited} onClick={handleClick}>
+                    Add to Schedule
+                </Button>
+            </>
+
+        ) : <Spinner />
+        )
+
+
+    }
+
     return (
         <main className="flex flex-col w-screen ml-4 mr-4">
             <div className='text-center font-bold text-6xl text-white w-[50%] self-center'>
@@ -162,6 +196,7 @@ export default function Classes() {
                 { component: ClassSelect(), verifier: isInvalid },
                 { component: ProfessorSelect(), verifier: isInvalid },
                 { component: SectionSelect(), verifier: isInvalid },
+                { component: CheckoutBox(), verifier: isInvalid },
             ]} />
 
         </main >
