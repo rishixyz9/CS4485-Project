@@ -3,19 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/fontawesome-free-solid'
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { Tooltip } from "@nextui-org/react";
-import { extractTimesAsMinutes, extractDaysFromString } from '@utils/ClassTimeParser';
-import { Class, Schedule } from "@utils/ScheduleUtils";
+import { extractTimesAsMinutes, extractDaysFromString } from '@/utils/ClassTimeParser';
+import { Class, Schedule } from "@/utils/ScheduleUtils";
 
 
-export default function ClassCalendar() {
+export default function ClassCalendar({ classes }: { classes: Class[] }) {
 
-    const class_1 = new Class('Machine Learning', 'CS 5390.002', '9:30 AM - 10:45 AM', 'TTh', 'Laura Smith', 'ECSS 3.120')
+    classes = classes[0]
 
-    const class_2 = new Class('Database Systems', 'CS 5330.004', '2:00 PM - 3:15 PM', 'MW', 'Robert Johnson', 'ECSS 2.312')
-
-    const class_3 = new Class('Operating Systems', 'CS 5349.003', '11:00 AM - 12:15 PM', 'F', 'Alice Martinez', 'ECSS 2.522')
-
-    const class_4 = new Class('Network Security', 'CS 5370.001', '3:30 PM - 4:45 PM', 'MWF', 'David Lee', 'ECSS 2.208')
+    const schedule1 = new Schedule()
+    schedule1.addClass(classes)
 
     const generateGridCol = (hour: Number, timeObjs: any[], enabled: Boolean) => {
 
@@ -58,9 +55,7 @@ export default function ClassCalendar() {
         )
     }
 
-    const schedule1 = new Schedule()
 
-    schedule1.addClass(class_1, class_2, class_3, class_4)
 
     return (
         // Calendar component that shows m-w schedule

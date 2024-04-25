@@ -10,6 +10,7 @@ import { Class, Schedule } from "@utils/ScheduleUtils";
 import { User } from "@utils/UserUtils";
 import { compareTwoDaysFromString } from "@utils/ClassTimeParser";
 import { getUser, fetchClassData, fetchDataForCourse } from "@utils/FirebaseUtils";
+import { set } from "firebase/database";
 
 export default function Classes() {
 
@@ -23,19 +24,31 @@ export default function Classes() {
     const [professors, setProfessors] = useState<string[]>([])
 
     const [filteredClasses, setFilteredClasses] = useState<any[]>([])
-
     const [selectedSection, setSelectedSection] = useState<string>("")
 
     const [user, setUser] = useState<User | null>(null)
+    const [classes, setClasses] = useState<Class[]>([])
 
     useEffect(() => {
         getUser("jxd200022").then((data) => {
             setUser(new User(data?.firstname, data?.lastname, data?.netId, data?.classes, data?.major, data?.year))
+            let temp = [...classes]
+            const promises = data?.classes.map(async (course: any) => {
+                const item = await fetchDataForCourse(course);
+                temp.push(new Class(item?.name, item?.course, item?.time, item?.days, item?.professor, item?.location));
+            });
+            Promise.all(promises).then(() => {
+                setClasses(temp);
+            });
         })
         fetchClassData().then((data) => {
             setClassData(data)
         })
     }, [])
+
+    useEffect(() => {
+        console.log(classes)
+    }, [user]);
 
     const DaysCheckBox = () => {
         return (
@@ -161,11 +174,13 @@ export default function Classes() {
             fetchDataForCourse(selectedSection).then((data) => {
                 setCheckout(new Class(data?.name, data?.course, data?.time, data?.days, data?.professor, data?.location))
             })
+            setSubmited(false)
         }, [selectedSection])
 
         const handleClick = () => {
             setSubmited(true)
             user?.addClass(selectedSection)
+            setClasses([...classes, checkout])
         }
 
         return (checkout ? (
@@ -188,9 +203,24 @@ export default function Classes() {
                 Classes
             </div>
 
-            <div className='font-semibold text-2xl text-white'>Class Search</div>
+            {/* view of all classes enrolled to user */}
+            <div className="flex flex-col gap-2 mt-8">
+                <div className="text-3xl font-bold">My Classes</div>
+                {classes?.length === user?.classes.length ? (
+                    <div className="flex flex-wrap gap-8">
+                        {classes.map((item) => (
+                            <ClassCard key={item.course} classData={item} />
+                        ))}
+                    </div>) : <Spinner />}
+            </div>
+
+            {/* managment panel */}
+            <div className="flex flex-col gap-2 mt-8">
+                <div className="text-3xl font-bold">Manage Classes</div>
+            </div>
 
             {/* pagination for class search form */}
+            <div className='font-semibold text-2xl text-white mt-8'>Class Search</div>
             <PaginatedForm pages={[
                 { component: DaysCheckBox(), verifier: isInvalid },
                 { component: ClassSelect(), verifier: isInvalid },

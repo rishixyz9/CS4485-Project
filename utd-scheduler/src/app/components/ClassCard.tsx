@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardHeader } from "@nextui-org/react";
-import { extractTimesAsMinutes } from "@utils/ClassTimeParser";
-import { classifyCourse } from "@utils/ScheduleUtils";
+import { extractTimesAsMinutes } from "@/utils/ClassTimeParser";
+import { classifyCourse } from "@/utils/ScheduleUtils";
 import Tag from "@components/Tag";
 
 export default function ClassCard({ classData }: { classData: any }) {

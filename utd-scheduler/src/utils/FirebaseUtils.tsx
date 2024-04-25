@@ -6,9 +6,9 @@
 // Import the functions you need from the SDKs you need
 import { db } from "@/config/FirebaseConfig";
 import { addDoc, collection, doc, getDoc, getDocs, updateDoc, setDoc, arrayUnion, arrayRemove, DocumentData } from "firebase/firestore";
-import classData from "../../../data/class_data.json";
+import classData from "../../data/class_data.json";
 
-import { Class, Schedule } from "@utils/ScheduleUtils";
+import { Class, Schedule } from "@/utils/ScheduleUtils";
 
 
 
@@ -101,7 +101,6 @@ export async function fetchClassData() {
 }
 
 export async function fetchDataForCourse(course: string) {
-    console.log(course);
     try {
         const docRef = await getDoc(doc(db, "classes", course));
         if (docRef.exists()) {

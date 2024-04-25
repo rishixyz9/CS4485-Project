@@ -1,5 +1,5 @@
-import { Class, Schedule } from "@utils/ScheduleUtils"
-import { createUser, getUser, addClassToUser } from "@utils/FirebaseUtils";
+import { Class, Schedule } from "@/utils/ScheduleUtils"
+import { createUser, getUser, addClassToUser } from "@/utils/FirebaseUtils";
 
 
 

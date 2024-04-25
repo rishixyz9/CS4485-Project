@@ -23,7 +23,7 @@ export default function SideMenu() {
         <>
             {/* hamburger menu icon */}
             <div className='ml-6 absolute mt-8 top-0 z-[60]'>
-                <FontAwesomeIcon className='w-7 h-7 hover:cursor-pointer hover:opacity-80 hover:scale-95' icon={faBars as IconProp} onClick={toggleMenu} />
+                <FontAwesomeIcon className='w-7 h-7 hover:cursor-pointer hover:opacity-80 hover:scale-75' icon={faBars as IconProp} onClick={toggleMenu} />
             </div>
 
             {/* side menu with items */}

@@ -13,7 +13,7 @@ export default function PaginatedForm({ pages }: { pages: page[] }) {
     const [currentPage, setCurrentPage] = React.useState(1);
 
     return (
-        <div className="flex flex-col gap-5 bg-[#181818] w-max p-4 rounded-md">
+        <div className="flex flex-col gap-5 bg-[#181818] w-max p-4 rounded-md transition-height">
             <p className="text-small text-default-500">Selected Page: {currentPage}</p>
 
             {pages[currentPage - 1].component}

@@ -32,7 +32,7 @@
         "./src/app/components/*"
       ],
       "@utils/*": [
-        "./src/app/utils/*"
+        "./src/utils/*"
       ],
     }
   },

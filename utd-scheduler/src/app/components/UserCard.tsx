@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Card, CardHeader, CardFooter, Button, Tooltip } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserMinus } from "@fortawesome/free-solid-svg-icons";
-import { removeFriendsFromUser } from "@utils/FirebaseUtils";
+import { removeFriendsFromUser } from "@/utils/FirebaseUtils";
 
 import Tag from "@components/Tag";
 import kamui from '@public/kamui.png';

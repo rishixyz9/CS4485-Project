@@ -9,9 +9,9 @@ import ClassCard from "@components/ClassCard";
 import UserCard from "@components/UserCard";
 import FriendModal from "@components/FriendModal";
 
-import { Class, Schedule } from "@utils/ScheduleUtils";
-import { User } from "@utils/UserUtils";
-import { createUser, getUser, addFriendsToUser } from "@utils/FirebaseUtils";
+import { Class, Schedule } from "@/utils/ScheduleUtils";
+import { User } from "@/utils/UserUtils";
+import { createUser, getUser, addFriendsToUser } from "@/utils/FirebaseUtils";
 
 
 export default function Friends() {
