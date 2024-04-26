@@ -38,7 +38,7 @@ export default function ClassCalendar({ classes }: { classes: Class[] }) {
 
         return (
             <div className="col-span-1 grid grid-rows-4 border-1 border-neutral-600">
-                {enabled ? (<>
+                {timeObjs.length >= 1 ? (<>
                     {[...Array(delay)].map((x, i) =>
                         <div key={i + 1} className="bg-white row-span-1"></div>
                     )}
