@@ -9,10 +9,13 @@ import { Class, Schedule } from "@/utils/ScheduleUtils";
 
 export default function ClassCalendar({ classes }: { classes: Class[] }) {
 
-    classes = classes[0]
-
     const schedule1 = new Schedule()
-    schedule1.addClass(classes)
+
+    for (const course of classes) {
+        schedule1.addClass(course)
+    }
+
+    console.log(schedule1.getTimeSlotsForDay('M'))
 
     const generateGridCol = (hour: Number, timeObjs: any[], enabled: Boolean) => {
 

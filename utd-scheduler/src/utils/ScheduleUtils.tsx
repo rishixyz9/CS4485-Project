@@ -48,6 +48,7 @@ export class Schedule {
     public getTimeSlotsForDay(day: string) {
         let slots = []
         for (let i = 0; i < this.slots.length; i++) {
+            console.log(this.slots[i], this.slots[i].days[day])
             if (this.slots[i].days[day]) {
                 slots.push([this.slots[i].times, this.slots[i].name])
             }
