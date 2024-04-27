@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client"
 
 import React, { useEffect, useState } from "react";
@@ -15,7 +16,7 @@ import { fetchClassData, fetchDataForCourse } from "@utils/FirebaseUtils";
 
 export default function Classes() {
 
-    const { user, logIn, logOut } = useAuth() as unknown as { user: User, logIn: () => void, logOut: () => void };
+    const { user, logIn, logOut } = useAuth() as unknown as { user: User, logIn: (netid: string) => void, logOut: () => void };
 
     const [isInvalid, setIsInvalid] = useState<boolean>(false)
 
@@ -193,7 +194,7 @@ export default function Classes() {
     }
 
     return (
-        <main className="flex flex-col w-screen ml-4 mr-4">
+        <main className="flex flex-col w-screen pl-4">
             <div className='text-center font-bold text-6xl text-white w-[50%] self-center'>
                 Classes
             </div>

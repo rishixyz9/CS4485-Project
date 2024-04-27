@@ -8,10 +8,10 @@ import { useAuth } from "@hooks/AuthProvider";
 
 export default function NavBar() {
 
-    const { user, logIn, logOut } = useAuth() as unknown as { user: User, logIn: () => void, logOut: () => void };
+    const { user, logIn, logOut } = useAuth() as unknown as { user: User, logIn: (netid: string) => void, logOut: () => void };
     const pathName = usePathname();
 
-    return (
+    return user ? (
         <Navbar shouldHideOnScroll>
             <NavbarBrand>
                 <p className="font-bold text-inherit"></p>
@@ -41,5 +41,5 @@ export default function NavBar() {
                 </NavbarItem>
             </NavbarContent>
         </Navbar>
-    );
+    ) : null;
 }

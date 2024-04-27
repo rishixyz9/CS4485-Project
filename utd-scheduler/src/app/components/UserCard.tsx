@@ -19,7 +19,7 @@ export default function UserCard({ userData, setFriends }: { userData: any, setF
 
     const [classes, setClasses] = useState<Class[]>([])
 
-    const { user, logIn, logOut } = useAuth() as unknown as { user: User, logIn: () => void, logOut: () => void };
+    const { user, logIn, logOut } = useAuth() as unknown as { user: User, logIn: (netid: string) => void, logOut: () => void };
 
     useEffect(() => {
         let temp: Class[] = [] // Explicitly type 'temp' as an array of 'Class' objects

@@ -11,7 +11,7 @@ export default function LoginModal({ }: {}) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const router = useRouter();
 
-  const user = useAuth();
+  const { user, logIn, logOut } = useAuth() as unknown as { user: User, logIn: (netid: string) => void, logOut: () => void };
 
   const [signUp, setSignUp] = useState<boolean>(false);
   const [selectedClass, setSelectedClass] = useState<string>('Freshman');
@@ -31,7 +31,7 @@ export default function LoginModal({ }: {}) {
     if (await fetchLoginData(netid, password, username) === netid) {
       console.log('authenticated: ', netid);
       new User(fname, lname, netid, [], 'Computer Science', selectedClass)
-      user?.logIn(netid);
+      logIn(netid);
     } else {
       console.log('failed to create new user');
     };
@@ -45,7 +45,7 @@ export default function LoginModal({ }: {}) {
 
     if (await fetchLoginData(netid, password, username)) {
       console.log('authenticated: ', netid);
-      user?.logIn(netid);
+      logIn(netid);
     } else {
       console.log('authentication failed');
     };

@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 
+import { User } from '@utils/UserUtils';
+
+import { useAuth } from '@hooks/AuthProvider';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faBookOpen } from '@fortawesome/fontawesome-free-solid'
 import { faCircleUser, faCalendarDays, faGear, faRightFromBracket, faUserGroup } from '@fortawesome/free-solid-svg-icons'
@@ -13,13 +17,14 @@ export default function SideMenu() {
 
     const [open, setOpen] = useState(false);
 
+    const { user, logIn, logOut } = useAuth() as unknown as { user: User, logIn: (netid: string) => void, logOut: () => void };
     const router = useRouter();
 
     const toggleMenu = () => {
         setOpen(!open);
     }
 
-    return (
+    return user ? (
         <>
             {/* hamburger menu icon */}
             <div className='ml-6 fixed mt-8 top-0 z-[60]'>
@@ -33,8 +38,8 @@ export default function SideMenu() {
                 <div className="flex flex-col items-center mt-32 mb-8 gap-2">
                     <Image src={kamui} alt="User Icon" className="w-16 h-16 rounded-full object-cover" />
                     <div className="flex flex-col text-center">
-                        <div className="text-white font-semibold">Rishabh Vemparala</div>
-                        <div className="text-gray-400">rxv200022</div>
+                        <div className="text-white font-semibold">{user.firstname} {user.lastname}</div>
+                        <div className="text-gray-400">{user.netid}</div>
                     </div>
                 </div>
 
@@ -64,12 +69,12 @@ export default function SideMenu() {
                         <FontAwesomeIcon className="self-center" icon={faCircleUser} />
                         <div className='ml-4'>Profile</div>
                     </div>
-                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-red-500 hover:cursor-pointer flex-grow-0" onClick={() => router.push('#')}>
+                    <div className="flex flex-row p-2 pl-4 rounded-md hover:bg-red-500 hover:cursor-pointer flex-grow-0" onClick={logOut}>
                         <FontAwesomeIcon className="self-center" icon={faRightFromBracket} />
                         <div className='ml-4'>Logout</div>
                     </div>
                 </div>
             </div >
         </>
-    );
+    ) : null;
 };

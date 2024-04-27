@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NextUIProvider } from "@nextui-org/react";
 
-import AuthProvider, { useAuth } from "@hooks/AuthProvider";
+import AuthProvider from "@hooks/AuthProvider";
 
 import Navbar from "@components/NavBar";
 import SideMenu from "@components/SideMenu";
