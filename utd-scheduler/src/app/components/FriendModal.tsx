@@ -1,17 +1,23 @@
 import React, { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { User } from "@utils/UserUtils";
 import { Input, Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { addFriendsToUser, getUser } from "@utils/FirebaseUtils";
 
 
-export default function FriendModal({ setUser }: { setUser: Function }) {
+export default function FriendModal({ user, setFriends }: { user: User, setFriends: Function }) {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const router = useRouter();
 
     const netidRef = useRef<HTMLInputElement>(null);
 
-    function handleLogin(func: Function) {
-        const netid = netidRef.current?.value;
-        setUser('jxd200022', netid);
+    function handleAdd(func: Function) {
+        const netid = netidRef.current?.value ?? ""; // Add nullish coalescing operator
+        addFriendsToUser(user.netid, netid).then((res) => {
+            getUser(netid).then((res) => {
+                setFriends([...user.friends, res]);
+            });
+        });
         func();
     }
 
@@ -32,7 +38,7 @@ export default function FriendModal({ setUser }: { setUser: Function }) {
                                 <Button color="danger" variant="ghost" onPress={onClose}>
                                     Close
                                 </Button>
-                                <Button color="primary" onPress={() => handleLogin(onOpen)}>
+                                <Button color="primary" onPress={() => handleAdd(onOpen)}>
                                     Add
                                 </Button>
                             </ModalFooter>

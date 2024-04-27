@@ -8,7 +8,7 @@ export class User {
     lastname: string
     netid: string
     classes: string[]
-    friends: User[]
+    friends: string[]
     major: string
     year: string
     constructor(firstname: string, lastname: string, netid: string, classes: string[], major: string, year: string) {

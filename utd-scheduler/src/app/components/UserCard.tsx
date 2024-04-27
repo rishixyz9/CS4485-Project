@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 
-import { Card, CardHeader, CardFooter, Button, Tooltip } from "@nextui-org/react";
+import { Card, CardHeader, Spinner, Tooltip } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserMinus } from "@fortawesome/free-solid-svg-icons";
-import { removeFriendsFromUser } from "@/utils/FirebaseUtils";
+
+import { Class } from "@utils/ScheduleUtils";
+import { User } from "@utils/UserUtils";
+import { getUser, fetchClassData, fetchDataForCourse, removeFriendsFromUser } from "@utils/FirebaseUtils";
 
 import Tag from "@components/Tag";
 import kamui from '@public/kamui.png';
 
 
 export default function UserCard({ userData }: { userData: any }) {
+
+    const [classes, setClasses] = useState<Class[]>([])
+
+    useEffect(() => {
+        let temp = [...classes]
+        const promises = userData?.classes.map(async (course: any) => {
+            const item = await fetchDataForCourse(course);
+            temp.push(new Class(item?.name, item?.course, item?.time, item?.days, item?.professor, item?.location));
+        });
+        Promise.all(promises).then(() => {
+            setClasses(temp);
+        });
+    }, [])
+
     return (
         <Card isFooterBlurred radius="lg" className="border-none">
             <CardHeader className="flex flex-col gap-3 relative">
@@ -30,11 +47,11 @@ export default function UserCard({ userData }: { userData: any }) {
                 <div className="flex flex-col justify-start">
                     <p className="text-md">Shared Classes:</p>
                     <div className="flex flex-col text-small text-default-500 gap-2">
-                        {userData.classes.map((classData: any) => {
+                        {classes && classes[0] ? classes.map((classData: any) => {
                             return (
                                 <Tag key={classData.course} tagName={classData.name} />
                             );
-                        })}
+                        }) : <Spinner color="primary" />}
                     </div>
                 </div>
             </CardHeader>

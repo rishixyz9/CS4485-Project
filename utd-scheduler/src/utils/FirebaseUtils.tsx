@@ -8,10 +8,42 @@ import { db } from "@/config/FirebaseConfig";
 import { addDoc, collection, doc, getDoc, getDocs, updateDoc, setDoc, arrayUnion, arrayRemove, DocumentData } from "firebase/firestore";
 import classData from "../../data/class_data.json";
 
-import { Class, Schedule } from "@/utils/ScheduleUtils";
+import { hashPassword, verifyPassword } from "@utils/LoginUtils";
 
 
+export async function createLoginData(netId: string, password: string, username: string) {
+    const loginData = {
+        netid: netId,
+        password: hashPassword(password),
+        username: username
+    };
 
+    try {
+        const docRef = await setDoc(doc(db, "login", netId), loginData);
+        console.log("Login record created with ID: ", netId);
+        return netId
+    } catch (error) {
+        console.error("Error creating login record: ", error);
+    }
+}
+
+export async function fetchLoginData(netId: string, password: string, username: string) {
+    try {
+        const docRef = await getDoc(doc(db, "login", netId));
+        if (docRef.exists()) {
+            if (verifyPassword(password, docRef.data().password) && docRef.data().username === username) {
+                return true // Correct password
+            }
+            return false // Incorrect password
+        } else {
+            await createLoginData(netId, password, username) //no login data found, create new login data
+            return netId
+        }
+    } catch (error) {
+        console.error("Error getting document:", error);
+        throw error;
+    }
+}
 
 export async function getUser(netId: string) {
     try {
