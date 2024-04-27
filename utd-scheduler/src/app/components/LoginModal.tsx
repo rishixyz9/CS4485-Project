@@ -30,6 +30,7 @@ export default function LoginModal({ }: {}) {
     const lname = lnameRef.current?.value || '';
     if (await fetchLoginData(netid, password, username) === netid) {
       console.log('authenticated: ', netid);
+      new User(fname, lname, netid, [], 'Computer Science', selectedClass)
       user?.logIn(netid);
     } else {
       console.log('failed to create new user');

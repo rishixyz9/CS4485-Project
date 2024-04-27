@@ -32,7 +32,7 @@ export default function Classes() {
 
     useEffect(() => {
         let temp: Class[] = []
-        const promises = user.classes.map(async (course: any) => {
+        const promises = user.classes?.map(async (course: any) => {
             const item = await fetchDataForCourse(course);
             temp.push(new Class(item?.name, item?.course, item?.time, item?.days, item?.professor, item?.location));
         });
