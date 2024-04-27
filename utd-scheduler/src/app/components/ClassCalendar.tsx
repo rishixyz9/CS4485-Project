@@ -15,6 +15,14 @@ export default function ClassCalendar({ classes }: { classes: Class[] }) {
         schedule1.addClass(course)
     }
 
+    console.log({
+        "monday": schedule1.getTimeSlotsForDay('M'),
+        "tuesday": schedule1.getTimeSlotsForDay('T'),
+        "wednesday": schedule1.getTimeSlotsForDay('W'),
+        "thursday": schedule1.getTimeSlotsForDay('Th'),
+        "friday": schedule1.getTimeSlotsForDay('F')
+    })
+
     const generateGridCol = (hour: Number, timeObjs: any[], enabled: Boolean) => {
 
         let delay = 0

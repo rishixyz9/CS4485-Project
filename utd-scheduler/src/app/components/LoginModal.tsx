@@ -31,7 +31,6 @@ export default function LoginModal({ }: {}) {
     if (await fetchLoginData(netid, password, username) === netid) {
       console.log('authenticated: ', netid);
       user?.logIn(netid);
-      router.push('/dashboard');
     } else {
       console.log('failed to create new user');
     };
@@ -44,9 +43,8 @@ export default function LoginModal({ }: {}) {
     const password = passwordRef.current?.value || '';
 
     if (await fetchLoginData(netid, password, username)) {
-      user?.logIn(netid);
       console.log('authenticated: ', netid);
-      router.push('/dashboard');
+      user?.logIn(netid);
     } else {
       console.log('authentication failed');
     };

@@ -14,41 +14,20 @@ import { getUser, fetchDataForCourse } from "@utils/FirebaseUtils";
 
 export default function Friends() {
 
-    const p = useAuth();
-    console.log(p)
-
-    const [user, setUser] = useState<User | null>(null)
-    const [classes, setClasses] = useState<Class[]>([])
-    const [friends, setFriends] = useState([])
+    const { user, logIn, logOut } = useAuth() as unknown as { user: User, logIn: () => void, logOut: () => void };
+    const [friends, setFriends] = useState<any[]>([])
 
     useEffect(() => {
-        getUser("jxd200022").then((data) => {
-            setUser(new User(data?.firstname, data?.lastname, data?.netId, data?.classes, data?.major, data?.year))
-            let tempF = []
-            let tempC = []
-            let promises = [
-                data?.friends.map(async (friend: string) => {
-                    const item = await getUser(friend)
-                    tempF.push(item)
-                }),
-                data?.classes.map(async (course: any) => {
-                    const item = await fetchDataForCourse(course);
-                    tempC.push(new Class(item?.name, item?.course, item?.time, item?.days, item?.professor, item?.location));
-                })
-            ]
-
-            Promise.all(promises).then(() => {
-                setFriends(tempF);
-                setClasses(tempC);
-            });
+        let temp: any[] = []
+        let promises = user.friends.map(async (friend: string) => {
+            const item = await getUser(friend)
+            temp.push(item)
         })
-    }, [])
 
-
-    useEffect(() => {
-        console.log(friends)
-    }, [friends])
-
+        Promise.all(promises).then(() => {
+            setFriends(temp);
+        });
+    }, [user])
 
     return (
         <main className="flex flex-col w-screen">
@@ -62,8 +41,8 @@ export default function Friends() {
 
 
             <div className="flex flex-wrap ml-4 mr-4 gap-8">
-                {friends && friends[0] ? (friends.map((friend) => (
-                    <UserCard key={friend.netId} userData={friend} />
+                {friends ? (friends.map((friend: any) => (
+                    <UserCard key={friend.netId} userData={friend} setFriends={setFriends} />
                 ))) : <Spinner color="primary" />}
             </div>
 

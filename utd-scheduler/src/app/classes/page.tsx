@@ -6,15 +6,17 @@ import { Button, CheckboxGroup, Checkbox, Spinner, Select, SelectItem } from "@n
 import PaginatedForm from "@components/PaginatedForm";
 import ClassCard from "@components/ClassCard";
 
-import { Class, Schedule } from "@utils/ScheduleUtils";
+import { useAuth } from "@hooks/AuthProvider";
+
+import { Class } from "@utils/ScheduleUtils";
 import { User } from "@utils/UserUtils";
 import { compareTwoDaysFromString } from "@utils/ClassTimeParser";
-import { getUser, fetchClassData, fetchDataForCourse } from "@utils/FirebaseUtils";
-import { set } from "firebase/database";
+import { fetchClassData, fetchDataForCourse } from "@utils/FirebaseUtils";
 
 export default function Classes() {
 
-    const [currentPage, setCurrentPage] = React.useState(1);
+    const { user, logIn, logOut } = useAuth() as unknown as { user: User, logIn: () => void, logOut: () => void };
+
     const [isInvalid, setIsInvalid] = useState<boolean>(false)
 
     const [classData, setClassData] = useState<any>(null)
@@ -26,29 +28,22 @@ export default function Classes() {
     const [filteredClasses, setFilteredClasses] = useState<any[]>([])
     const [selectedSection, setSelectedSection] = useState<string>("")
 
-    const [user, setUser] = useState<User | null>(null)
     const [classes, setClasses] = useState<Class[]>([])
 
     useEffect(() => {
-        getUser("jxd200022").then((data) => {
-            setUser(new User(data?.firstname, data?.lastname, data?.netId, data?.classes, data?.major, data?.year))
-            let temp = [...classes]
-            const promises = data?.classes.map(async (course: any) => {
-                const item = await fetchDataForCourse(course);
-                temp.push(new Class(item?.name, item?.course, item?.time, item?.days, item?.professor, item?.location));
-            });
-            Promise.all(promises).then(() => {
-                setClasses(temp);
-            });
-        })
-        fetchClassData().then((data) => {
-            setClassData(data)
-        })
-    }, [])
+        let temp: Class[] = []
+        const promises = user.classes.map(async (course: any) => {
+            const item = await fetchDataForCourse(course);
+            temp.push(new Class(item?.name, item?.course, item?.time, item?.days, item?.professor, item?.location));
+        });
 
-    useEffect(() => {
-        console.log(classes)
-    }, [user]);
+        promises.push(fetchClassData().then((data) => {
+            setClassData(data)
+        }))
+        Promise.all(promises).then(() => {
+            setClasses(temp);
+        });
+    }, [user])
 
     const DaysCheckBox = () => {
         return (
@@ -73,15 +68,15 @@ export default function Classes() {
 
     const ClassSelect = () => {
 
-        const [options, setOptions] = useState<any>(null)
+        const [options, setOptions] = useState<any>()
 
         useEffect(() => {
-            let set = new Set()
+            let set = new Set();
             classData?.map((e: any) => {
-                set.add(`${e.course.split('.')[0]} - ${e.name}`)
-            })
-            setOptions(set)
-        }, [classData])
+                set.add(`${e.course.split('.')[0]} - ${e.name}`);
+            });
+            setOptions(set);
+        }, [classData]);
 
         return (options ? (
             <Select
@@ -206,12 +201,12 @@ export default function Classes() {
             {/* view of all classes enrolled to user */}
             <div className="flex flex-col gap-2 mt-8">
                 <div className="text-3xl font-bold">My Classes</div>
-                {classes?.length === user?.classes.length ? (
+                {classes && classes.length >= 1 ? (
                     <div className="flex flex-wrap gap-8">
                         {classes.map((item) => (
                             <ClassCard key={item.course} classData={item} />
                         ))}
-                    </div>) : <Spinner />}
+                    </div>) : classes.length === 0 ? <div className="text-lg">No Classes Registered</div> : <Spinner />}
             </div>
 
             {/* managment panel */}

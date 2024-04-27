@@ -12,10 +12,15 @@ export default function FriendModal({ user, setFriends }: { user: User, setFrien
     const netidRef = useRef<HTMLInputElement>(null);
 
     function handleAdd(func: Function) {
+        if (netidRef.current === null || netidRef.current.value === user.netid) return; // Add null check
         const netid = netidRef.current?.value ?? ""; // Add nullish coalescing operator
         addFriendsToUser(user.netid, netid).then((res) => {
             getUser(netid).then((res) => {
-                setFriends([...user.friends, res]);
+                if (res !== null) {
+                    setFriends([...user.friends, res]);
+                } else {
+                    console.log('User not found')
+                }
             });
         });
         func();
