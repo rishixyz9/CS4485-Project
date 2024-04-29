@@ -29,7 +29,6 @@ export default function Friends() {
                 setFriends(temp);
             });
         })
-
     }, [user])
 
     useEffect(() => {

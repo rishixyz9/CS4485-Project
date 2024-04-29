@@ -1,8 +1,13 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from '@fortawesome/fontawesome-free-solid'
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { Tooltip } from "@nextui-org/react";
+import { extractTimesAsMinutes, extractDaysFromString } from '@/utils/ClassTimeParser';
 import { Class, Schedule } from "@/utils/ScheduleUtils";
 
-export default function ClassCalendar({ classes }: { classes: Class[] }) {
+
+export default function TestCalendar({ classes }: { classes: Class[] }) {
 
     const schedule1 = new Schedule()
 
@@ -40,11 +45,12 @@ export default function ClassCalendar({ classes }: { classes: Class[] }) {
         let row = []
 
         for (const slot of slots[day]) {
+            console.log(slot[3], (slot[1] - slot[0]))
             row.push(
                 <>
-                    {slot[1] - slot[0] > 0 && <div key={slot[2]} className={"h-16 bg-white/10 rounded-md border-white border-1"} style={{ width: `${slot[1] - slot[0]}%` }}></div>}
-                    <Tooltip key={slot[3]} color="primary" content={slot[3]} className="capitalize">
-                        <div className={"h-16 bg-aqua/10 rounded-md border-aqua border-1"} style={{ width: `${slot[2]}%` }}></div>
+                    {slot[1] - slot[0] > 0 && <div className={`w-[${slot[1] - slot[0]}%] h-16 bg-white/10 rounded-md border-white border-1`}></div>}
+                    <Tooltip color="primary" content={slot[3]} className="capitalize">
+                        <div className={`w-[${slot[2]}%] h-16 bg-aqua/10 rounded-md border-aqua border-1`}></div>
                     </Tooltip>
                 </>
             )
@@ -84,6 +90,29 @@ export default function ClassCalendar({ classes }: { classes: Class[] }) {
 
             {/* friday */}
             {generateRow('F')}
+
+
+
+
         </div>
     );
 }
+
+// sample of day statically
+
+// {/* wednesday */}
+// <div className="flex flex-row w-full">
+//     {/* day of the week */}
+//     <div className="h-16 border-2 border-secondary w-[10%] rounded-md mr-2 flex items-center justify-center">W</div>
+
+//     {/* time blocks for the day */}
+//     <div className="flex flex-row gap-2 w-full">
+//         <div className="w-[43.75%] h-16 bg-white/10 rounded-md border-white border-2"></div>
+//         <Tooltip color="primary" content={"Computer Science I for Non-majors 1335.001"} className="capitalize">
+//             <div className="w-[7.8125%] h-16 bg-aqua/10 rounded-md border-aqua border-2"></div>
+//         </Tooltip>
+//         <div className="flex-1 h-16 bg-white/10 rounded-md border-white border-2"></div>
+//     </div>
+// </div>
+
+
