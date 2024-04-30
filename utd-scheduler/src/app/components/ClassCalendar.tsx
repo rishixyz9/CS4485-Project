@@ -68,7 +68,7 @@ export default function ClassCalendar({ classes }: { classes: Class[] }) {
 
     return (
         // Calendar component that shows m-w schedule from 6am to 10pm (16 hours)
-        <div className="flex flex-col w-[30rem] bg-[#18181b] text-lg text-center self-center mt-8 mb-8 p-2 rounded-md h-max gap-2">
+        <div className="flex flex-col w-[30rem] bg-[#18181b] text-lg text-center mt-8 mb-8 p-2 rounded-md h-max gap-2">
 
             {/* monday */}
             {generateRow('M')}

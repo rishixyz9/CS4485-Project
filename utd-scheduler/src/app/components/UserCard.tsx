@@ -9,10 +9,11 @@ import { useAuth } from "@hooks/AuthProvider";
 
 import { Class } from "@utils/ScheduleUtils";
 import { User } from "@utils/UserUtils";
-import { getUser, fetchClassData, fetchDataForCourse, removeFriendsFromUser } from "@utils/FirebaseUtils";
+import { getUser, fetchClassData, fetchDataForCourse, removeFriendsFromUser, getGroupsForUser } from "@utils/FirebaseUtils";
 
 import Tag from "@components/Tag";
 import kamui from '@public/kamui.png';
+import { get } from "http";
 
 
 export default function UserCard({ userData, setFriends }: { userData: any, setFriends: Function }) {
@@ -27,6 +28,7 @@ export default function UserCard({ userData, setFriends }: { userData: any, setF
             const item = await fetchDataForCourse(course);
             temp.push(new Class(item?.name, item?.course, item?.time, item?.days, item?.professor, item?.location));
         });
+
         Promise.all(promises).then(() => {
             setClasses(temp);
         });
@@ -58,9 +60,11 @@ export default function UserCard({ userData, setFriends }: { userData: any, setF
                     <p className="text-md">Shared Classes:</p>
                     <div className="flex flex-col text-small text-default-500 gap-2">
                         {classes && classes[0] ? classes.map((classData: any) => {
-                            return (
-                                <Tag key={classData.course} tagName={classData.name} />
-                            );
+                            if (classData.course in userData.classes) {
+                                return (
+                                    <Tag key={classData.course} tagName={classData.name} />
+                                );
+                            }
                         }) : <Spinner color="primary" />}
                     </div>
                 </div>

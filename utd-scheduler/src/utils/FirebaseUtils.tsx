@@ -147,6 +147,109 @@ export async function fetchDataForCourse(course: string) {
 
 }
 
+export async function fetchGroupData(groupName: string) {
+    try {
+        const docRef = await getDoc(doc(db, "groups", groupName));
+        if (docRef.exists()) {
+            return docRef.data();
+        } else {
+            return null
+        }
+    } catch (error) {
+        console.error("Error getting document:", error);
+        throw error;
+    }
+}
+
+export async function createGroup(groupName: string, members: string[]) {
+    try {
+        if (!await fetchGroupData(groupName)) {
+            const docRef = await setDoc(doc(db, "groups", groupName), {
+                members: members,
+                classes: []
+            });
+            console.log("Group created with ID: ", groupName);
+        } else {
+            console.log("Group with exists with ID: ", groupName);
+        }
+    } catch (error) {
+        console.error("Error creating group: ", error);
+    }
+}
+
+export async function addUserToGroup(groupName: string, netId: any) {
+    try {
+        if (await fetchGroupData(groupName) && await getUser(netId)) {
+            const docRef = await updateDoc(doc(db, "groups", groupName), {
+                members: arrayUnion(netId)
+            });
+        } else {
+            console.log("Group or user does not exist");
+        }
+        console.log("Document updated with ID: ", groupName);
+    } catch (error) {
+        console.error("Error updating document: ", error);
+    }
+}
+
+export async function removeUserFromGroup(groupName: string, netId: any) {
+    try {
+        if (await fetchGroupData(groupName) && await getUser(netId)) {
+            const docRef = await updateDoc(doc(db, "groups", groupName), {
+                members: arrayRemove(netId)
+            });
+        } else {
+            console.log("Group or user does not exist");
+        }
+        console.log("Document updated with ID: ", groupName);
+    } catch (error) {
+        console.error("Error updating document: ", error);
+    }
+}
+
+export async function addClassToGroup(groupName: string, courseId: any) {
+    try {
+        if (await fetchGroupData(groupName)) {
+            const docRef = await updateDoc(doc(db, "groups", groupName), {
+                classes: arrayUnion(courseId)
+            });
+        }
+        console.log("Document updated with ID: ", groupName);
+    } catch (error) {
+        console.error("Error updating document: ", error);
+    }
+}
+
+export async function removeClassFromGroup(groupName: string, courseId: any) {
+    try {
+        if (await fetchGroupData(groupName)) {
+            const docRef = await updateDoc(doc(db, "groups", groupName), {
+                classes: arrayRemove(courseId)
+            });
+        }
+        console.log("Document updated with ID: ", groupName);
+    } catch (error) {
+        console.error("Error updating document: ", error);
+    }
+}
+
+export async function getGroupsForUser(netId: string) {
+    try {
+        const querySnapshot = await getDocs(collection(db, "groups"));
+        const groups: any[] = [];
+        querySnapshot.forEach((doc) => {
+            const members = doc.data().members;
+            if (members.includes(netId)) {
+                groups.push([doc.id, members, doc.data().classes]);
+            }
+        });
+        return groups;
+    } catch (error) {
+        console.error("Error getting groups for user:", error);
+        throw error;
+    }
+}
+
 export async function migrateClassData() {
     const classDataArray = Object.values(classData);
 
