@@ -30,7 +30,8 @@ export default function Friends() {
     useEffect(() => {
         user.getFriends().then((data) => {
             let temp: any[] = []
-            let promises = user.friends.map(async (friend: string) => {
+
+            let promises = user?.friends.map(async (friend: string) => {
                 const item = await getUser(friend)
                 temp.push(item)
             })
@@ -90,7 +91,7 @@ export default function Friends() {
             </div>
 
 
-            <GroupModal user={user} friends={friends} />
+            <GroupModal groups={groups} setGroups={setGroups} user={user} friends={friends} />
 
             {(groups.length > 0 && viewing) && <ScheduleForGroup group={viewing} />}
 

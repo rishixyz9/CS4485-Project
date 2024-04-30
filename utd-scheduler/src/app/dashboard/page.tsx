@@ -33,7 +33,11 @@ export default function Dashboard() {
                 Dashboard
             </div>
 
-            {classes.length > 0 ? <ClassCalendar classes={classes} /> : <Spinner />}
+            {classes ? (
+                classes.length >= 1 ? (
+                    <ClassCalendar classes={classes} />) :
+                    <div className='text-center font-semibold text-3xl'>No Classes Found</div>
+            ) : <Spinner />}
 
         </main>
     );

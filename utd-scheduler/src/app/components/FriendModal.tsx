@@ -17,7 +17,7 @@ export default function FriendModal({ user, setFriends }: { user: User, setFrien
         addFriendsToUser(user.netid, netid).then((res) => {
             getUser(netid).then((res) => {
                 if (res !== null) {
-                    setFriends([...user.friends, res]);
+                    setFriends([...user?.friends, res]);
                 } else {
                     console.log('User not found')
                 }

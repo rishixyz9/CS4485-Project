@@ -27,7 +27,7 @@ export async function createLoginData(netId: string, password: string, username:
     }
 }
 
-export async function fetchLoginData(netId: string, password: string, username: string) {
+export async function fetchLoginData(netId: string, password: string, username: string, x: Boolean) {
     try {
         const docRef = await getDoc(doc(db, "login", netId));
         if (docRef.exists()) {
@@ -36,8 +36,12 @@ export async function fetchLoginData(netId: string, password: string, username: 
             }
             return false // Incorrect password
         } else {
-            await createLoginData(netId, password, username) //no login data found, create new login data
-            return netId
+            if (x) {
+                await createLoginData(netId, password, username)    //no login data found, create new login data
+                return netId
+            } else {
+                return false //no login data found
+            }
         }
     } catch (error) {
         console.error("Error getting document:", error);
@@ -69,6 +73,7 @@ export async function createUser(firstname: string, lastname: string, netId: str
                 classes: classes,
                 major,
                 year,
+                friends: []
             });
             console.log("User created with ID: ", netId);
         } else {

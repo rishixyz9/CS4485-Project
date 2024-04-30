@@ -7,7 +7,7 @@ import { createGroup, addUserToGroup, getGroupsForUser } from "@utils/FirebaseUt
 
 import PaginatedForm from "@components/PaginatedForm";
 
-export default function GroupModal({ user, friends }: { user: User, friends: any }) {
+export default function GroupModal({ groups, setGroups, user, friends }: { groups: any, setGroups: Function, user: User, friends: any }) {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const router = useRouter();
 
@@ -20,6 +20,7 @@ export default function GroupModal({ user, friends }: { user: User, friends: any
         const handleCreateGroup = async () => {
             setDisabled(true)
             await createGroup(inputRef?.current?.value, [user.netid])
+            setGroups([...groups, [inputRef?.current?.value, [user.netid], []]])
         }
 
         return (
@@ -41,7 +42,6 @@ export default function GroupModal({ user, friends }: { user: User, friends: any
 
     const AddFriendsToGroup = () => {
 
-        const [groups, setGroups] = useState<any>([])
         const [selectedGroup, setSelectedGroup] = useState<any>()
         const [option, setOption] = useState<any>()
         const inputRef = useRef<HTMLInputElement>(null)
@@ -51,13 +51,6 @@ export default function GroupModal({ user, friends }: { user: User, friends: any
             setDisabled(true)
             await addUserToGroup(selectedGroup, option)
         }
-
-        useEffect(() => {
-            getGroupsForUser(user.netid).then((data) => {
-                setGroups(data)
-            })
-
-        }, [setGroups])
 
         return (
             groups ? (<div className="flex flex-col gap-2">
@@ -79,9 +72,9 @@ export default function GroupModal({ user, friends }: { user: User, friends: any
                     className="dark max-w-xs w-64"
                     onChange={(e) => setOption(e.target.value)}
                 >
-                    {[...user.friends].map((item) => (
-                        <SelectItem key={item} value={item}>
-                            {item}
+                    {friends.map((item) => (
+                        <SelectItem key={item.netId} value={item.netId}>
+                            {item.netId}
                         </SelectItem>
                     ))}
                 </Select>

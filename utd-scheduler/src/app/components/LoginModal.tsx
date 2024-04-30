@@ -5,7 +5,7 @@ import { Input, Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button
 import { useAuth } from "@hooks/AuthProvider";
 
 import { User } from "@utils/UserUtils";
-import { fetchLoginData } from "@utils/FirebaseUtils";
+import { fetchLoginData, createUser } from "@utils/FirebaseUtils";
 
 export default function LoginModal({ }: {}) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -28,10 +28,11 @@ export default function LoginModal({ }: {}) {
     const password = passwordRef.current?.value || '';
     const fname = fnameRef.current?.value || '';
     const lname = lnameRef.current?.value || '';
-    if (await fetchLoginData(netid, password, username) === netid) {
+    if (await fetchLoginData(netid, password, username, true) === netid) {
       console.log('authenticated: ', netid);
-      new User(fname, lname, netid, [], 'Computer Science', selectedClass)
-      logIn(netid);
+      createUser(fname, lname, netid, [], 'Computer Science', selectedClass).then(() => {
+        logIn(netid);
+      });
     } else {
       console.log('failed to create new user');
     };
@@ -43,7 +44,7 @@ export default function LoginModal({ }: {}) {
     const username = usernameRef.current?.value || '';
     const password = passwordRef.current?.value || '';
 
-    if (await fetchLoginData(netid, password, username)) {
+    if (await fetchLoginData(netid, password, username, false)) {
       console.log('authenticated: ', netid);
       logIn(netid);
     } else {

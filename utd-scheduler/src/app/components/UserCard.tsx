@@ -9,11 +9,10 @@ import { useAuth } from "@hooks/AuthProvider";
 
 import { Class } from "@utils/ScheduleUtils";
 import { User } from "@utils/UserUtils";
-import { getUser, fetchClassData, fetchDataForCourse, removeFriendsFromUser, getGroupsForUser } from "@utils/FirebaseUtils";
+import { fetchDataForCourse, removeFriendsFromUser } from "@utils/FirebaseUtils";
 
 import Tag from "@components/Tag";
 import kamui from '@public/kamui.png';
-import { get } from "http";
 
 
 export default function UserCard({ userData, setFriends }: { userData: any, setFriends: Function }) {
